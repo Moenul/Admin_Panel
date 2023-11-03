@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/admin_main.css">
+<title>Admin Pannel</title>
+</head>
+<body>
+
+
+<nav class="navigation">
+	<div class="dropdown_btn"><i class="fas fa-bars"></i></div>
+
+	<ul class="nav_item">
+		<li id="message"><i class="far fa-envelope"><span>12</span></i>
+			<ul class="sub_dropdown">
+				<a href=""><li>first msg</li></a>
+				<a href=""><li>last msg</li></a>
+			</ul>
+		</li>
+		<li id="notification"><i class="far fa-bell"><span>6</span></i>
+			<ul class="sub_dropdown">
+				<a href=""><li>new comment</li></a>
+				<a href=""><li>post sheraed</li></a>
+				<a href=""><li>subscriber request</li></a>
+			</ul>
+		</li>
+		<li><i class="fas fa-users"><span>99</span></i></li>
+
+		<li id="profile" style="padding:0px;"><img src="../images/profile3.jpg">
+			<span>Admin name</span>
+			<ul class="sub_dropdown">
+				<a href=""><li><i class="fas fa-user"></i>Profile</li></a>
+				<a href=""><li><i class="fas fa-power-off"></i>Log Out</li></a>
+			</ul>
+		</li>
+	</ul>
+	
+</nav>
+
+
+<div class="mainSection">
+	<div class="side_nav">
+		<ul>
+			<a href=""><li><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></li></a>
+			<li><i class="far fa-clipboard"></i><span>Posts</span>
+				<ul class="side_dropdown">
+					<a href=""><li>View All Post</li></a>
+					<a href=""><li>Add Post</li></a>
+				</ul>
+			</li>
+			<li><i class="far fa-clipboard"></i><span>Category</span>
+				<ul class="side_dropdown">
+					<a href="/PHP_Project/admin_panel/category.html"><li>Category</li></a>
+					<a href="/PHP_Project/admin_panel/sub_category.html"><li>Subcategory</li></a>
+				</ul>
+			</li>
+			<li><i class="far fa-clipboard"></i><span>Category</span>
+				<ul class="side_dropdown">
+					<a href="/PHP_Project/admin_panel/category.html"><li>Category</li></a>
+					<a href=""><li>Subcategory</li></a>
+				</ul>
+			</li>
+			<a href=""><li><i class="far fa-comments"></i><span>Comments</span></li></a>
+			<li><i class="fas fa-users"></i><span>Users</span>
+				<ul class="side_dropdown">
+					<a href=""><li>View All User</li></a>
+					<a href=""><li>Add User</li></a>
+				</ul>
+			</li>
+			<a href=""><li><i class="far fa-envelope"></i><span>Mailbox</span></li></a>
+			<a href=""><li><i class="far fa-bell"></i><span>Notification</span></li></a>
+			<a href=""><li><i class="fas fa-puzzle-piece"></i><span>Widget</span></li></a>
+			<a href=""><li><i class="fas fa-user"></i><span>Profile</span></li></a>
+		</ul>
+	</div>
+
+
+
+	<div class="content_section">
+		<!-- start header -->
+		<div class="header">
+			<h3>Welcome</h3>&nbsp;&nbsp;<span>Sub Heading</span>
+			<a href=""><i class="fas fa-home"></i>Home</a>
+			<hr>
+		</div>
+		<!-- end header -->
+
+		<!-- start dashboard content -->
+
+		<!-- start dashboard content -->
+<div class="row">
+
+<div class="category_section col-3">
+	<a href=''>Home & office<span>3</span></a>
+</div>
+
+<table class="table table-dark table-hover col-8 ">
+
+	<thead><!-- mx-auto -->
+	<tr>
+		<td colspan="3"><h5>Home & office</h5></td>
+		<td></td>
+		<td></td>
+		<td colspan="2"><a href="" class="btn btn-success btn-sm">Add Sub Category</a></td>
+	</tr>
+	<tr>
+		<th style="width:40px; text-align:center;">ID</th>
+		<th>Images</th>
+		<th>Name</th>
+		<th>Bangla Name</th>
+		<th>Seller Count</th>
+		<th style="width:80px; text-align:center;">Edit</th>
+		<th style="width:80px; text-align:center;">Delete</th>
+	</tr>
+	</thead>
+	<tbody>
+
+	<tr>
+		<td style="width:40px; text-align:center;">1</td>
+		<td><img style="width:80px;" src=""></td>
+		<td>Electrecian</td>
+		<td>Electrecian</td>
+		<td>10</td>
+		<td style="width:80px; text-align:center; font-size: 20px;"><a href=""><i class="far fa-edit text-warning"></i></a></td>
+		<td style="width:80px; text-align:center; font-size: 20px;"><a href=""><i class="fas fa-trash-alt text-danger"></i></a></td>
+	</tr>
+
+	</tbody>
+ </table>
+</div>
+
+
+
+
+<!-- <div class="add_category_bar col-6">
+	<h3 class="text-center">Add New Sub Category</h3>
+
+	<form action="" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+			<label>Select Category :</label>
+			<select name="link_id" id="" class="form-control">
+				<option value=''>Home & Office</option>
+				<option value=''>Office</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Sub Category Name :</label>
+			<input name="name" type="text" class="form-control" placeholder="Enter Your Sub Category Name">
+		</div>
+		<div class="form-group">
+			<label>Sub Category Bangla Name :</label>
+			<input name="name_bn" type="text" class="form-control" placeholder="Enter Your Sub Category Bangla Name">
+		</div>
+		<div class="form-group">
+			<label>Sub Category Image :</label>
+			<input name="image" type="file">
+		</div>
+
+		<div class="form-group">
+			<input name="submit" type="submit" class="btn btn-primary" value="Submit">
+			<a href="sub_category.php" class="btn btn-warning">Cancel</a>
+		</div>
+	</form>
+</div> -->
+
+
+
+
+
+<!-- 
+<div class="add_category_bar col-6">
+	<h3 class="text-center">Edit Sub Category</h3>
+
+	<form action="" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+			<label>Select Sub Category :</label>
+			<select name="link_id" id="" class="form-control">
+				<option value=''>Home & Office</option>
+				<option value=''>Office</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Sub Category Name :</label>
+			<input name="edit_name" type="text" class="form-control" placeholder="Enter Your Category Name" value="<?php echo $sub_cat_name; ?>">
+		</div>
+		<div class="form-group">
+			<label>Sub Category Bangla Name :</label>
+			<input name="edit_name_bn" type="text" class="form-control" placeholder="Enter Your Category Bangla Name" value="<?php echo $sub_cat_name_bn; ?>">
+		</div>
+		<div class="form-group">
+			<label>Sub Category Image :</label>
+			<input name="edit_image" type="file">
+		</div>
+
+		<div class="form-group">
+			<input name="update" type="submit" class="btn btn-primary" value="Update">
+			<a href="sub_category.php" class="btn btn-warning">Cancel</a>
+		</div>
+	</form>
+</div> -->
+
+
+		<!-- end dashboard content -->
+	</div>
+</div>
+
+
+<style>
+
+
+
+
+.add_category_bar{
+	background: white;
+	max-width: 500px;
+	box-shadow: 0px 0px 8px #a9a9a9;
+	border: 1px solid #a2a2a2;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+.add_category_bar label{
+	font-family: system-ui;
+	font-weight: 500;
+	display: block;	
+}
+
+</style>	
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/admin_scripts.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
